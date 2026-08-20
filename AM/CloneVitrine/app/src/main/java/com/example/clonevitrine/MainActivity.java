@@ -1,47 +1,27 @@
-package com.example.myfirstapplication;
+package com.example.clonevitrine;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Principal extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_principal);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        setContentView(R.layout.activity_main);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-        });
-
-        Button btOla = findViewById(R.id.bt_Ola);
-        btOla.setOnClickListener(v -> {
-           // abrir nova tela
-            Intent rota = new Intent(this, MainActivity.class);
-            startActivity(rota);
-        });
-
-        Button btCiclo = findViewById(R.id.bt_Ciclo);
-        btCiclo.setOnClickListener(v -> {
-            // abrir nova tela
-            Intent rota = new Intent(this, CicloDeVida.class);
-            startActivity(rota);
-        });
-
-        Button btLinear = findViewById(R.id.bt_Linear);
-        btLinear.setOnClickListener(v -> {
-            // abrir nova tela
-            Intent rota = new Intent(this, LinearLayout.class);
-            startActivity(rota);
         });
 
         Button btNetlix = findViewById(R.id.bt_Netflix);
@@ -51,6 +31,6 @@ public class Principal extends AppCompatActivity {
             startActivity(rota);
         });
 
-
     }
+
 }
