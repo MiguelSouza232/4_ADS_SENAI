@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        INTERNET é permissão normal: o sistema concede na instalação e não existe
+        diálogo em tempo de execução. Ela está aqui só por causa da tela de
+        prévia da semana 6. Permissões perigosas (câmera, GPS, contatos) são
+        assunto da semana 15.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_lancador"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RangoNaRegua">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DetalheActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".NovoLugarActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".previa.PreviaSemana6Activity"
+            android:parentActivityName=".MainActivity" />
+
+    </application>
+</manifest>
