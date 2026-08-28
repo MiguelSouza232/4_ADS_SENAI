@@ -2,7 +2,6 @@ package com.example.clonevitrine;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,11 +25,14 @@ public class MainActivity extends AppCompatActivity {
 
         Button btNetlix = findViewById(R.id.bt_Netflix);
         btNetlix.setOnClickListener(v -> {
-            // abrir nova tela
             Intent rota = new Intent(this, Netflix.class);
             startActivity(rota);
         });
 
+        Button btHbo = findViewById(R.id.bt_Hbo);
+        btHbo.setOnClickListener(v -> {
+            Intent rota = new Intent(this, Hbo.class);
+            startActivity(rota);
+        });
     }
-
 }
