@@ -1,5 +1,7 @@
 package br.edu.unisenai.rangonaregua;
 
+import static br.edu.unisenai.rangonaregua.MainActivity.listaLugares;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -11,6 +13,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import br.edu.unisenai.rangonaregua.model.Lugar;
 
 
 public class NovoLugarActivity extends AppCompatActivity {
@@ -35,10 +39,10 @@ public class NovoLugarActivity extends AppCompatActivity {
         EditText edtNome = findViewById(R.id.edtNome);
         EditText edtCategoria = findViewById(R.id.edtCategoria);
         EditText edtPreco = findViewById(R.id.edtPreco);
-        EditText edtDescricao = findViewById(R.id.edtObservacao);
+        EditText edtObservacao = findViewById(R.id.edtObservacao);
         Button btnSalvar = findViewById(R.id.btnSalvar);
 
-        // COnfigurar o botão de salvar
+        // Configurar o botão de salvar
         btnSalvar.setOnClickListener(v -> {
            if(edtNome.getText().toString().isEmpty()) {
                edtNome.setError("Obrigatório");
@@ -47,7 +51,14 @@ public class NovoLugarActivity extends AppCompatActivity {
            } else if (edtPreco.getText().toString().isEmpty()) {
                edtPreco.setError("Obrigatório");
            } else {
-               //
+               // Salvar o lugar no banco de dados
+               Lugar novo = new Lugar(edtNome.getText().toString(),
+                       edtCategoria.getText().toString(),
+                       Double.parseDouble(edtPreco.getText().toString()),
+                       edtObservacao.getText().toString(),
+                       0);
+               listaLugares.add(novo);
+               finish();
            }
         });
 

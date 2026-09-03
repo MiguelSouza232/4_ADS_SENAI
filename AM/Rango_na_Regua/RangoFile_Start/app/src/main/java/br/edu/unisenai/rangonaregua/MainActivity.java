@@ -11,12 +11,15 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import br.edu.unisenai.rangonaregua.adapter.LugarAdapter;
 import br.edu.unisenai.rangonaregua.data.Catalogo;
 import br.edu.unisenai.rangonaregua.model.Lugar;
 
@@ -24,6 +27,7 @@ import br.edu.unisenai.rangonaregua.model.Lugar;
 public class MainActivity extends AppCompatActivity {
 
     static List<Lugar> listaLugares = new ArrayList<>();
+    LugarAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +49,18 @@ public class MainActivity extends AppCompatActivity {
         // Carrear base de dados
         listaLugares = Catalogo.inicial();
 
+        // Configurar o RecyclerView
+        RecyclerView rvLugares = findViewById(R.id.rvLugares);
+        rvLugares.setLayoutManager(new LinearLayoutManager(this));
+
+        adapter = new LugarAdapter(listaLugares);
+        rvLugares.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        adapter.notifyDataSetChanged();
     }
 
 }

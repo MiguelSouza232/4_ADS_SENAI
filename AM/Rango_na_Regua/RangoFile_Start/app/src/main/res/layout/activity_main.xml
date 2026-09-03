@@ -45,7 +45,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
-                android:paddingBottom="88dp" />
+                android:paddingBottom="88dp"
+                tools:listitem="@layout/item_lugar" />
 
             <!-- Estado vazio: faz parte da interface, não é acidente. -->
             <LinearLayout
