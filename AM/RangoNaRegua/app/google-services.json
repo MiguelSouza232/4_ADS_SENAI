@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "630571630523",
+    "project_id": "rangotb-miguel",
+    "storage_bucket": "rangotb-miguel.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630571630523:android:5c3493e45719bf609cce9e",
+        "android_client_info": {
+          "package_name": "br.edu.unisenai.rangonaregua"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSaiXpvUj8Ob5Ci6dvUk7gHexTOAWEYHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
