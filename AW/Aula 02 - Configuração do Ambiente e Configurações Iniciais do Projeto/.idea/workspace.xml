@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e15057e0-66d3-4c8c-a75a-61ae64aac76f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Aula 02 - Configuração do Ambiente e Configurações Iniciais do Projeto.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/Docker/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/src/main/java/com/example/imagemPecas/ImagemPecasApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/src/main/java/com/example/imagemPecas/application/images/imagesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/src/main/java/com/example/imagemPecas/domain/entity/Image.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/src/main/java/com/example/imagemPecas/domain/enums/ImageExtension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projetos/src/test/java/com/example/imagemPecas/ImagemPecasApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/25170626/Desktop/4_ADS_SENAI/AW/Aula 02 - Configuração do Ambiente e Configurações Iniciais do Projeto" value="3ICOwwFKZEPD1ZfMqz0L0n9kaSi" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="3ICIeEfcDP2WCw9t2nnVxXMi6Ls" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ImagemPecasApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/25170626/Desktop/4_ADS_SENAI/AW/Aula 02 - Configuração do Ambiente e Configurações Iniciais do Projeto&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e15057e0-66d3-4c8c-a75a-61ae64aac76f" name="Changes" comment="" />
+      <created>1787262216823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787262216823</updated>
+    </task>
+    <servers />
+  </component>
+</project>
