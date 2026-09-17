@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Rango na Régua-Start</string>
+    <string name="login_titulo">Rango na Régua</string>
+    <string name="login_subtitulo">Entre para montar o seu ranking brabo!</string>
+    <string name="login_email">E-mail</string>
+    <string name="login_senha">Senha</string>
+    <string name="login_entrar">ENTRAR</string>
+    <string name="login_criar_conta">CRIAR CONTA</string>
 
     <string name="menu_ver_grade">Ver em grade</string>
     <string name="menu_ver_lista">Ver em lista</string>

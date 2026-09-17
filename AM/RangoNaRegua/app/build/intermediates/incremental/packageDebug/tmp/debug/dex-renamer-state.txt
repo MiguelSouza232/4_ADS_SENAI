@@ -1,4 +1,4 @@
-#Wed Sep 09 21:12:54 BRT 2026
+#Wed Sep 16 22:10:32 BRT 2026
 base.0=C\:\\Users\\25170626\\Desktop\\4_ADS_SENAI\\AM\\RangoNaRegua\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\25170626\\Desktop\\4_ADS_SENAI\\AM\\RangoNaRegua\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\25170626\\Desktop\\4_ADS_SENAI\\AM\\RangoNaRegua\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex

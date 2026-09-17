@@ -4,6 +4,8 @@ package br.edu.unisenai.rangonaregua;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -20,6 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.ListenerRegistration;
 
 import java.util.ArrayList;
@@ -49,6 +52,10 @@ public class MainActivity extends AppCompatActivity implements LugarAdapter.Acao
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Ligar a ToolBar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         FloatingActionButton btNovo = findViewById(R.id.fabNovo);
         btNovo.setOnClickListener(v -> {
@@ -88,16 +95,15 @@ public class MainActivity extends AppCompatActivity implements LugarAdapter.Acao
                     public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
                         int posicao = viewHolder.getAdapterPosition();
                         Lugar item = listaLugares.get(posicao);
-//                        listaLugares.remove(posicao);
-//                        adapter.notifyItemRemoved(posicao);
                         repository.excluir(item)
-                                .addOnFailureListener(e -> {)
-                                    Log.e("ERRO", "Erro ao excluir", e);
-                                });
+                                        .addOnFailureListener(e -> {
+                                            Log.e("Excluir", "Erro ao excluir", e);
+                                        });
+
                         // Avisar
                         Snackbar.make(findViewById(R.id.rvLugares),
                                 "Lugar removido", Snackbar.LENGTH_LONG)
-                                .setAction("Desfazer",v -> repository.restaurar(item)).show();
+                                .setAction("Desfazer", v -> repository.restaurar(item)).show();
                     }
                 };
 
@@ -107,27 +113,24 @@ public class MainActivity extends AppCompatActivity implements LugarAdapter.Acao
     @Override
     protected void onResume() {
         super.onResume();
-        //Ativar o REALTIME do DATABASE
+        //Ativar o real time do database
         registro = repository.lerRealTime((value, error) -> {
             if (error != null) {
-                Toast.makeText(this, "Erro ao ler os dados", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Erro ao ler dados", Toast.LENGTH_SHORT).show();
+                return;
             }
             listaLugares.clear();
             listaLugares.addAll(value.toObjects(Lugar.class));
             adapter.notifyDataSetChanged();
         });
-        adapter.notifyDataSetChanged();;
+        adapter.notifyDataSetChanged();
     }
 
     @Override
     public void votar(Lugar lugar) {
-//        lugar.setVotos( lugar.getVotos() + 1);
-//        Catalogo.ordenarPorVotos(listaLugares);
-//        adapter.notifyDataSetChanged();
-
         repository.votar(lugar)
                 .addOnFailureListener(e -> {
-                   Log.e("ERRO", "Erro ao votar", e);
+                    Toast.makeText(this, "Erro ao votar", Toast.LENGTH_SHORT).show();
                 });
     }
 
@@ -136,5 +139,24 @@ public class MainActivity extends AppCompatActivity implements LugarAdapter.Acao
         Intent rota = new Intent(this, DetalheActivity.class);
         rota.putExtra("obj", lugar);
         startActivity(rota);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_principal, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.acaoConta) {
+            FirebaseAuth autenticar = FirebaseAuth.getInstance();
+            autenticar.signOut();
+
+            Intent rota = new Intent(this, LoginActivity.class);
+            startActivity(rota);
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

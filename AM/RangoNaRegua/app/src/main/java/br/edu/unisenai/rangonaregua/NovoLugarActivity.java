@@ -59,14 +59,15 @@ public class NovoLugarActivity extends AppCompatActivity {
                                         Double.parseDouble(edtPreco.getText().toString()),
                                         edtObservacao.getText().toString(),
                                    0);
-                //listaLugares.add(novo);
+//                listaLugares.add(novo);
                 LugarRepository repository = new LugarRepository();
-                repository.inserir(novo).addOnSuccessListener(documentReference -> {
-                    Toast.makeText(null, "Sucesso!", Toast.LENGTH_SHORT).show();
-                })
-                .addOnFailureListener(e -> {
-                    Toast.makeText(null, "Erro ao salvar!", Toast.LENGTH_SHORT).show();
-                });
+                repository.inserir(novo)
+                                .addOnSuccessListener(documentReference -> {
+                                    Toast.makeText(this, "Salvo com sucesso", Toast.LENGTH_SHORT).show();
+                                })
+                                .addOnFailureListener(e -> {
+                                    Toast.makeText(this, "Erro ao salvar", Toast.LENGTH_SHORT).show();
+                                });
                 finish();
             }
         });

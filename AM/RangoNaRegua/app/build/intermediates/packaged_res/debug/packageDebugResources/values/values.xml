@@ -9,6 +9,7 @@
     <color name="verde_cartao">#17402B</color>
     <color name="verde_escuro">#0E2A1B</color>
     <string name="app_name">Rango na Régua-Start</string>
+    <string name="default_web_client_id" translatable="false">630571630523-djgpja93kehr6en5ckprfs8k6mo8epim.apps.googleusercontent.com</string>
     <string name="detalhe_titulo">Detalhe do lugar</string>
     <string name="erro_categoria">Informe uma categoria</string>
     <string name="erro_nome">Diga pelo menos o nome do lugar</string>
@@ -24,6 +25,12 @@
     <string name="hint_observacao">Por que vale a pena?</string>
     <string name="hint_preco">Preço médio em reais</string>
     <string name="lider">Líder do ranking</string>
+    <string name="login_criar_conta">CRIAR CONTA</string>
+    <string name="login_email">E-mail</string>
+    <string name="login_entrar">ENTRAR</string>
+    <string name="login_senha">Senha</string>
+    <string name="login_subtitulo">Entre para montar o seu ranking brabo!</string>
+    <string name="login_titulo">Rango na Régua</string>
     <string name="menu_filtrar">Filtrar categoria</string>
     <string name="menu_previa">Prévia da semana 6</string>
     <string name="menu_ver_grade">Ver em grade</string>

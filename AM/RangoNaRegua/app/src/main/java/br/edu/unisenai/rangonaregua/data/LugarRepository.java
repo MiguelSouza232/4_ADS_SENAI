@@ -15,36 +15,36 @@ import br.edu.unisenai.rangonaregua.model.Lugar;
 
 public class LugarRepository {
 
-    public Task<DocumentReference> inserir (Lugar lugar){
+    public Task<DocumentReference> inserir(Lugar lugar) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         return db.collection("lugares").add(lugar);
     }
 
-    public ListenerRegistration lerRealTime (EventListener<QuerySnapshot> callback){
+    public ListenerRegistration lerRealTime(EventListener<QuerySnapshot> callback){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         return db.collection("lugares")
                 .orderBy("votos", Query.Direction.DESCENDING)
                 .addSnapshotListener(callback);
     }
 
-    public Task<Void> votar (Lugar lugar){
+    public Task<Void> votar(Lugar lugar){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         return db.collection("lugares")
                 .document(lugar.getId())
                 .update("votos", FieldValue.increment(1));
     }
 
-    public Task<Void> restaurar (Lugar lugar){
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-        return db.collection("lugares")
-                .document(lugar.getId())
-                .set("votos");
-    }
-
-    public Task<Void> excluir (Lugar lugar){
+    public Task<Void> excluir(Lugar lugar){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         return db.collection("lugares")
                 .document(lugar.getId())
                 .delete();
+    }
+
+    public Task<Void> restaurar(Lugar lugar){
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        return db.collection("lugares")
+                .document(lugar.getId())
+                .set(lugar);
     }
 }

@@ -9,7 +9,6 @@ public class Lugar implements Serializable {
 
     @DocumentId
     private String id;
-
     private String nome;
     private String categoria;
     private double precoMedio;
@@ -34,7 +33,6 @@ public class Lugar implements Serializable {
     public void setId(String id) {
         this.id = id;
     }
-
     public String getNome() { return nome; }
     public String getCategoria() { return categoria; }
     public double getPrecoMedio() { return precoMedio; }
