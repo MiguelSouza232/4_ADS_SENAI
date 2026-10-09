@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "485383993773",
+    "project_id": "playlist-miguel",
+    "storage_bucket": "playlist-miguel.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485383993773:android:054a88bfb75f0aa37a8924",
+        "android_client_info": {
+          "package_name": "com.aula.playlist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCThwVhBuAqocknJTKizBLNEd9QBeslbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
