@@ -1,5 +1,6 @@
 package br.senai.sp.emendaai;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -52,6 +53,7 @@ public class DetalheFeriadoActivity extends AppCompatActivity {
         btnBuscarCep = findViewById(R.id.btnBuscarCep);
 
         btnBuscarCep.setOnClickListener(v -> buscarCep());
+        btnCompartilhar.setOnClickListener(v -> compartilhar());
 
         Feriado feriado = (Feriado) getIntent().getSerializableExtra("feriado");
         if (feriado != null) {
@@ -128,6 +130,14 @@ public class DetalheFeriadoActivity extends AppCompatActivity {
         txtResultadoCep.setText(endereco);
         txtResultadoCep.setVisibility(View.VISIBLE);
         btnCompartilhar.setEnabled(true);
+    }
+
+    private void compartilhar(){
+        String texto = "Colocar as informações do feriado aqui + o endereço do encontro";
+        Intent rota = new Intent(Intent.ACTION_SEND);
+        rota.setType("text/plain");
+        rota.putExtra(Intent.EXTRA_TEXT, texto);
+        startActivity(Intent.createChooser(rota, "Compartilhar"));
     }
 
 }
