@@ -1,0 +1,53 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'br.edu.unisenai.chefdebolso'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "br.edu.unisenai.chefdebolso"
+        minSdk 33
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true   // usamos BuildConfig.DEBUG para ligar o App Check de depuração
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.13.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
+
+    // Firebase: o BoM escolhe versões compatíveis entre si (conferido em 28/10/2026)
+    implementation platform('com.google.firebase:firebase-bom:35.1.0')
+    implementation 'com.google.firebase:firebase-ai'             // Firebase AI Logic (Gemini)
+    implementation 'com.google.firebase:firebase-appcheck-debug' // App Check em modo depuração
+
+    // Só o Java precisa destas duas: o SDK foi escrito em Kotlin
+    implementation 'com.google.guava:guava:31.0.1-android'       // ListenableFuture (resposta única)
+    implementation 'org.reactivestreams:reactive-streams:1.0.4'  // Publisher (resposta em streaming)
+
+    // Gson, o mesmo da semana 6, para transformar o JSON da receita em objeto
+    implementation 'com.google.code.gson:gson:2.11.0'
+}

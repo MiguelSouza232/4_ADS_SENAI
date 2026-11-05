@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paleta "Rango na Régua", a mesma da semana 9 -->
+<resources>
+    <color name="fundo">#FFF4F7F5</color>
+    <color name="texto">#FF12211A</color>
+    <color name="texto_secundario">#FF5B6F63</color>
+    <color name="verde_rotulo">#FF1B6B44</color>
+    <color name="verde_escuro">#FF0E2A1B</color>
+    <color name="verde_cartao">#FF17402B</color>
+    <color name="verde_android">#FF3DDC84</color>
+    <color name="dourado">#FFFFD166</color>
+    <color name="branco">#FFFFFFFF</color>
+    <color name="tinta_verde">#FFE4EFE8</color>
+    <color name="tinta_dourada">#FFFFF6DF</color>
+    <color name="linha">#FFD5E0D9</color>
+    <color name="erro_texto">#FF9A2617</color>
+    <color name="erro_fundo">#FFFBEAE5</color>
+</resources>

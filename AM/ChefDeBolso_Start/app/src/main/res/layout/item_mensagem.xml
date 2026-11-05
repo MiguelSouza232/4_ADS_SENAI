@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Um layout só para todas as mensagens.
+    O ViewHolder decide, conforme o tipo, de que lado a bolha fica,
+    qual fundo ela usa e se o rótulo aparece.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="4dp">
+
+    <LinearLayout
+        android:id="@+id/bolha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bolha_chef"
+        android:orientation="vertical"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="10dp">
+
+        <!-- Só aparece na receita e no erro -->
+        <TextView
+            android:id="@+id/tvRotulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:letterSpacing="0.08"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.15"
+            android:maxWidth="300dp"
+            android:textColor="@color/texto"
+            android:textIsSelectable="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+</FrameLayout>

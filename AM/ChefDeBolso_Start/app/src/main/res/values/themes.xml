@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ChefDeBolso" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/verde_rotulo</item>
+        <item name="colorOnPrimary">@color/branco</item>
+        <item name="colorPrimaryContainer">@color/tinta_verde</item>
+        <item name="colorOnPrimaryContainer">@color/verde_escuro</item>
+        <item name="colorSecondary">@color/verde_cartao</item>
+        <item name="colorSecondaryContainer">@color/tinta_verde</item>
+        <item name="colorOnSecondaryContainer">@color/verde_escuro</item>
+        <item name="colorSurface">@color/branco</item>
+        <item name="colorOnSurface">@color/texto</item>
+        <item name="colorOnSurfaceVariant">@color/texto_secundario</item>
+        <item name="colorOutline">@color/linha</item>
+        <item name="colorError">@color/erro_texto</item>
+        <item name="android:colorBackground">@color/fundo</item>
+        <!-- Barra de status escura atrás da toolbar verde: ícones claros -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="TextoBolha">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+
+    <style name="RotuloCard">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/verde_rotulo</item>
+    </style>
+</resources>

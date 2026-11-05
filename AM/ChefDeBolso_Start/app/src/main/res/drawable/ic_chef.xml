@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Avatar do chef: chapéu branco sobre círculo verde-escuro -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp"
+    android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="@color/verde_escuro"
+        android:pathData="M24,0a24,24 0,1 1,0 48a24,24 0,1 1,0 -48z"/>
+    <path android:fillColor="@color/branco" android:pathData="M17,29C13.7,29 11,26.3 11,23C11,19.7 13.7,17 17,17C17.4,17 17.8,17.04 18.2,17.12C19.3,14.66 21.46,13 24,13C26.54,13 28.7,14.66 29.8,17.12C30.2,17.04 30.6,17 31,17C34.3,17 37,19.7 37,23C37,26.3 34.3,29 31,29L31,33L17,33Z"/>
+    <path android:fillColor="@color/verde_android" android:pathData="M17,34.5h14v2.5h-14z"/>
+    <path android:fillColor="@color/dourado" android:pathData="M35,9a3,3 0,1 1,0 6a3,3 0,1 1,0 -6z"/>
+</vector>

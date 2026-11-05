@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chef de Bolso</string>
+    <string name="subtitulo_modelo">Gemini · %1$s</string>
+
+    <string name="vazio_titulo">Bora cozinhar?</string>
+    <string name="vazio_texto">Pergunte qualquer coisa de cozinha ou toque em \"Receita com o que tenho\" e conte o que sobrou na geladeira.</string>
+    <string name="sugestao_1">O que faço com arroz e ovo?</string>
+    <string name="sugestao_2">Um lanche em 10 minutos</string>
+    <string name="sugestao_3">Como trocar o leite do bolo?</string>
+
+    <string name="dica_mensagem">Pergunte ao chef</string>
+    <string name="enviar">Enviar</string>
+    <string name="parar">Parar resposta</string>
+    <string name="nova_conversa">Nova conversa</string>
+
+    <string name="chef_digitando">digitando…</string>
+    <string name="chef_interrompido">(resposta interrompida)</string>
+
+    <string name="geladeira_botao">Receita com o que tenho</string>
+    <string name="geladeira_titulo">O que tem aí?</string>
+    <string name="geladeira_dica">Ex.: arroz, ovo, cebola, tomate</string>
+    <string name="geladeira_ajuda">Separe por vírgula. Sal, óleo e temperos básicos o chef já supõe que você tem.</string>
+    <string name="geladeira_confirmar">Sugerir receita</string>
+    <string name="geladeira_vazia">Conte pelo menos um ingrediente</string>
+    <string name="geladeira_pedido">Tenho em casa: %1$s. O que eu faço?</string>
+    <string name="cancelar">Cancelar</string>
+
+    <string name="receita_rotulo">Receita do chef</string>
+    <string name="receita_resumo">%1$d min · %2$s</string>
+    <string name="receita_ingredientes">INGREDIENTES</string>
+    <string name="receita_preparo">MODO DE PREPARO</string>
+    <string name="receita_dica">Dica do chef: %1$s</string>
+    <string name="aviso_ia">Gerado por IA. Confira quantidades, tempos e alergias.</string>
+    <string name="erro_rotulo">Algo deu errado</string>
+</resources>
