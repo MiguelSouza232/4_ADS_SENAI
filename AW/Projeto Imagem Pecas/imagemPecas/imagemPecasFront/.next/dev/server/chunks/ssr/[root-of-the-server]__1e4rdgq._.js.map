@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/25170626/Desktop/4_ADS_SENAI/AW/Projeto%20Imagem%20Pecas/imagemPecas/imagemPecasFront/src/app/favicon.ico.mjs%20(structured%20image%20object)"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,0IAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/25170626/Desktop/4_ADS_SENAI/AW/Projeto%20Imagem%20Pecas/imagemPecas/imagemPecasFront/src/app/page.tsx"],"sourcesContent":["import { PrimeiroComponente } from \"../components/PrimeiroComponente\";\n\nexport default function Home() {\n  return (\n      <PrimeiroComponente />\n  );\n}\n"],"names":["Home"],"mappings":";;;;;AAAA;;;AAEe,SAASA;IACtB,qBACI,8OAAC,8JAAkB;;;;;AAEzB"}},
+    {"offset": {"line": 51, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/25170626/Desktop/4_ADS_SENAI/AW/Projeto%20Imagem%20Pecas/imagemPecas/imagemPecasFront/src/components/PrimeiroComponente.tsx"],"sourcesContent":["export function PrimeiroComponente() {\r\n\r\n    function handleClick() {\r\n  console.log(\"Botão clicado!\");\r\n}\r\n\r\n    return (\r\n        <div>\r\n            Primeiro Componente Turma B\r\n\r\n            <button onClick={handleClick}>Clique aqui</button>\r\n        </div>\r\n    );\r\n}   "],"names":["PrimeiroComponente","handleClick","console","log","onClick"],"mappings":";;;;;;AAAO,SAASA;IAEZ,SAASC;QACXC,QAAQC,GAAG,CAAC;IACd;IAEI,qBACI,8OAAC;;YAAI;0BAGD,8OAAC;gBAAOC,SAASH;0BAAa;;;;;;;;;;;;AAG1C"}}]
+}
